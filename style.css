@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --font-size-default: 10px;
+    --font-roboto: 'Roboto', sans-serif;
+    --primary-color: #2563EB;
+    --color-links: #0F172A;
+    --color-text: #475569;
+    --color-icon: #94A3B8;
+    --neutral-color: #fff;
+    --gradient: linear-gradient(3deg,rgb(199, 72, 157)15% , rgba(144, 65, 144, 0.6)100%);
+}
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--font-size-default);
+}
+
+body {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: var(--font-roboto);
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+    background: var(--neutral-color);
+    padding: 0 2.5rem;
+}
+hr{
+  background-color: gray;
+    width: 100%;
+    height: 0.1rem;
+ margin-top: 1rem;
+}
+.nav_bar .logo {
+    font-family: var(--font-roboto);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.nav_bar .nav_links {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 75%;
+}
+
+.nav_bar .nav_links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    width: 50rem;
+}
+
+.nav_bar .nav_links ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-links);
+    font-family: var(--font-roboto);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_bar .nav_links ul a ion-icon {
+    margin-left: .6rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 19rem;
+    height: 100%;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn .login{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 5rem;
+    background: transparent;
+}
+
+.btn .sign {
+    font-size: 1.5rem;
+    padding: .9rem 1.5rem;
+    border-radius: .5rem;
+    width: 15rem;
+    color: var(--neutral-color);
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s ease;
+ 
+}
+
+.btn .sign:hover {
+    background: var(--neutral-color);
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
+.btn .sign ion-icon {
+    margin-left: .5rem;
+}
+
+.nav_bar .btn-menu {
+    display: none;
+}
+
+.nav_bar .btn-menu button {
+    background: transparent;
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_bar .btn-menu .bx {
+    color: var(--primary-color);
+    font-size: 4.5rem;
+    margin: 0;
+    padding: 0;
+}
+.sec1{
+    display: flex;
+    height: 50rem;
+    margin: 1rem;
+    padding: 2rem 1rem;
+}
+ .sec1 .team_text{
+    flex: 1 ;
+    padding: 3rem;
+}
+.sec1 .team_text h1{
+    font-size: 7rem;
+    padding: 2rem;
+}
+.sec1 .team_text p{
+    font-size: 2rem;
+}
+input{
+    height: 4rem;
+    width: 50%;
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 0.1rem solid grey;
+}
+button a{
+    text-decoration: none;
+    color: var(--neutral-color);
+}
+button{
+    background-color: var(--primary-color);
+    height: 4rem;
+   margin: 1rem;
+       border-radius: 1rem;
+   width: 20%;
+}
+.sec1 .team_text .press{
+    height: 6rem;
+    width: 95%;
+    margin: 2rem;
+    background-image: url(./images/made.png);
+    background-size: cover;
+    border-radius: 1rem;
+}
+.sec1 .team{
+    flex: 1 ;
+    background-color: rgb(167, 161, 161);
+    background-image: url(./images/business.png);
+    background-size: cover;
+    margin: 2rem;
+ } 
+.sec2{
+    display: flex;
+    height: 52rem;
+    width: 100%;
+}
+.sec2 .img{
+    flex: 1;
+}
+.sec2 .img .image1{
+    padding: 0 2rem;
+    margin: 0 2rem;
+}
+.sec2 .img .image2{
+  padding: 5rem 0rem;
+  margin: 1rem 0rem;
+}
+.sec2 .img .image3{
+    padding: 3rem 2rem;
+}
+.sec2 .message{
+    flex: 1;
+}
+.sec2 .message h1{
+    font-size: 7rem;
+    padding: 4.5rem;
+}
+.sec2 .message p{
+    font-size: 2rem;
+    color: var(--color-text);
+    padding: 0 4.5rem;
+    padding-bottom: 4.5rem;
+}
+.sec2 .message a{
+    padding: 4.5rem;
+    margin: 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.sec2 .message1{
+    display: none;
+    visibility: hidden;
+}
+.sec3{
+    display: flex;
+    height: 70rem;
+    width: 100%;
+}
+.sec3 .write{
+    flex: 1;
+}
+.sec3 .write h1{
+    font-size: 5rem;
+    padding: 4rem;
+    text-align: center;
+}
+.sec3 .write p{
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    padding-bottom: 7rem;
+    text-align: center;
+}
+.sec3 .write a{
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 3rem;
+    text-align: center;
+}
+.sec3 .circle{
+    flex: 1;
+    background-image: url(./images/cycle.png);
+    background-size: cover;
+    height: 59rem;
+    width: 70%;
+}
+.sec4{
+    display: flex;
+  margin: 0 4rem;
+    border-radius: 2rem;
+    height: 40rem;
+    width: 100%;
+    background: var(--gradient),url(./images/mongolfiere.jpeg);
+  background-size: cover;
+}
+.sec4 .rien{
+    flex: 1;
+}
+.sec4 .mot{
+    flex: 1;
+    color: white;
+}
+.sec4 .mot h1{
+    font-size: 5rem;
+    margin: 3rem;
+}
+.sec4 .mot p{
+    font-size: 2rem;
+    margin: 2.7rem;
+}
+.sec4 .mot a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 3rem;
+}
+.sec5{
+    display: flex;
+    height: 45rem;
+    width: 100%;
+    padding: 4rem;
+}
+.sec5 .improve{
+    flex: 1;
+}
+.sec5 .improve h1{
+    font-size: 7rem;
+    padding: 3rem;
+}
+.sec5 .improve a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0 3rem;
+}
+.sec5 .improve tr td{
+    border: 0.1rem solid;
+    border-collapse: collapse;
+    font-size: 2rem;
+    text-align: center;
+    width: 20rem;
+    padding: 1rem;
+}
+table{
+    padding: 0 3rem;
+}
+.sec5 .improve tr td a{
+    color: var(--color-links);
+}
+.sec5 .improve .res{
+    background-color:  #b4beca;
+}
+.sec5 .improve p{
+    font-size: 2rem;
+    padding: 3rem;
+}
+.sec5 .work{
+    flex: 1;
+    background: url(./images/work.png);
+    background-size: cover;
+}
+.sec6{
+    height: 38rem;
+    width: 90%;
+    background: linear-gradient(0.15turn, #760cb8, #c875b6);
+   margin: 8rem ;
+border-radius: 2rem;
+}
+.sec6 h1{
+    color: var(--neutral-color);
+    font-size: 5rem;
+    padding: 4rem 29rem;
+}
+.sec6 p{
+    color: var(--neutral-color);
+    font-size: 3rem;
+    align-self: center;
+    padding: 4rem;
+}
+.sec6 a{
+    text-decoration: none;
+   font-weight: bolder;
+}
+.sec6 button {
+    align-self: center;
+   margin: 0 39rem;
+}
+footer{
+    display: flex;
+    height: 4rem;
+    font-size: 2rem;
+}
+footer .mag{
+    padding: 0 8rem;
+    padding-right: 19rem;
+}
+footer .term{
+    padding: 0 3rem;
+}
+footer a{
+    text-decoration: none;
+    color: var(--color-links);
+}
+
+@media only screen and (max-width: 820px){
+    body {
+        border: none;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        overflow-x: hidden;
+        height: 100%;
+        font-family: var(--font-roboto);
+    }
+    
+    .nav_bar .nav_links {
+     display: none;
+    }
+    .nav_bar .logo h1{
+        font-size: 5rem;
+    }
+    .sec1{
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+        width: 100%;
+    }
+    .team_text{
+    flex: 1;
+    padding: 0;
+    }
+    .team_text h1{
+        font-size: 2rem;
+    }
+    .team{
+        flex: 2;
+        height: 60rem;
+    }
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        height: 120rem;
+        width: 100%;
+    }
+    .sec2 .message1{
+        flex: 1;
+        display: contents;
+        visibility: visible;
+        height: 5rem;
+    }
+    .sec2 .message1 h1{
+        font-size: 4.5rem;
+        align-self: center;
+        padding: 2rem 0;
+    }
+    .sec2 .message p{
+        font-size: 2.9rem;
+        padding: 0 2rem;
+    }
+    .sec2 .message{
+        flex: 1;
+        display: contents;
+        visibility: visible;
+        height: 5rem;
+    }
+    .sec2 .message h1{
+        font-size: 4.5rem;
+        align-self: center;
+        padding: 2rem 0;
+    }
+    .sec2 .message a{
+        font-size: 2.9rem;
+        padding: 4rem;
+    }
+    .sec2 .message1 p{
+        font-size: 2.9rem;
+        padding: 0 2rem;
+    }
+    .sec2 .message1 a{
+        font-size: 2.9rem;
+        padding: 4rem;
+    }
+    .sec2 .img{
+        flex: 1;
+    }
+    .sec3{
+        display: flex;
+        flex-direction: column;
+        height: 70rem;
+        width: 100%;
+    }
+  .sec3 .write{
+   display: none;
+   visibility: hidden;
+    }
+    .sec4{
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        width: 90%;
+        align-self: center;
+    }
+    .sec4 .rien{
+        display: none;
+        visibility: hidden;
+    }
+    .sec5{
+        display: flex;
+        flex-direction: column;
+        height:95rem;
+        width: 100%;
+    }
+    .sec6{
+        height: 50rem;
+        width: 100%;
+    }
+    .sec6 h1{
+        font-size: 5rem;
+        padding: 4rem ;
+    }
+    .sec6 p{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 390px){
+    body {
+        border: none;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        overflow-x: hidden;
+        height: 100%;
+        font-family: var(--font-roboto);
+    }
+    
+    .nav_bar .nav_links {
+     display: none;
+    }
+    .nav_bar .logo h1{
+        font-size: 5rem;
+    }
+    .sec1{
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+        width: 100%;
+     
+    }
+    .team_text{
+    flex: 1;
+    padding: 0;
+    }
+    .team_text h1{
+        font-size: 2rem;
+    }
+    .team{
+        flex: 2;
+        height: 60rem;
+    }
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        height: 257rem;
+        width: 100%;
+     
+    }
+    .sec2 .message1{
+        flex: 1;
+        display: contents;
+        visibility: visible;
+        height: 5rem;
+    }
+    .sec2 .message1 h1{
+        font-size: 4.5rem;
+        align-self: center;
+        padding: 2rem 0;
+    }
+    .sec2 .message p{
+        font-size: 2.9rem;
+        padding: 0 2rem;
+    }
+    .sec2 .message{
+        flex: 1;
+        display: contents;
+        visibility: visible;
+        height: 5rem;
+    }
+    .sec2 .message h1{
+        font-size: 4.5rem;
+        align-self: center;
+        padding: 2rem 0;
+    }
+    .sec2 .message a{
+        font-size: 2.9rem;
+        padding: 4rem;
+    }
+    .sec2 .message1 p{
+        font-size: 2.9rem;
+        padding: 0 2rem;
+    }
+    .sec2 .message1 a{
+        font-size: 2.9rem;
+        padding: 4rem;
+    }
+    .sec2 .img{
+        flex: 1;
+    }
+    .sec3{
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        margin: 0;
+        align-self: flex-start;
+    }
+    .sec3 .write{
+        display: none;
+        visibility: hidden;
+         }
+  .sec4{
+             display: flex;
+             flex-direction: column;
+             height: 60rem;
+             width: 90%;
+             align-self: center;
+             margin: 0;
+             align-self: flex-start;
+         }
+         .sec4 .rien{
+             display: none;
+             visibility: hidden;
+         }
+         .sec5{
+            display: flex;
+            flex-direction: column;
+            height:95rem;
+            width: 100%;
+            margin: 0;
+        align-self: flex-start;
+        }
+       table{
+            margin: 0;
+            align-self: start;
+            padding: 0;
+        }
+    .sec6{ 
+        height: 70rem;
+        width: 100%;
+       margin: 0;
+        align-self: flex-start;
+    }
+    .sec6 button{
+        display: none;
+        visibility: hidden;
+    }
+    .sec6 h1{
+        font-size: 5rem;
+        padding: 4rem ;
+    }
+    .sec6 p{
+        font-size: 3rem;
+    }
+    footer{
+        display: flex;
+        height: 10rem;
+        flex-direction: row;
+    }
+    footer .term{
+        flex: 1;
+    }
+    footer .term{
+        display: none;
+        visibility: hidden;
+    }
+    footer .mag{
+        flex: 1;
+    }
+}
